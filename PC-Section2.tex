@@ -1,0 +1,131 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 24 Aug 2017
+
+{\bf 2. Analytical study of the properties of curves on a projectively connected surface. --- }
+% 
+We now propose to investigate analytically the properties (arc, projective curvature, geodesics) of curves on projectively connected surfaces, defined geometrically in the preceding paragraph.
+
+Attach to each analytic point $\bm A$ of a surface $S$ a first-order projective frame $[\bm{AA}_1 \bm A_2 \bm A_3]$, where $\bm A_3$ is the point associated with point $\bm A$ (point $\bm B$ of the preceding paragraph) when establishing the projective connection on $S$.
+
+The passage from a frame to an infinitely close frame is translated by the formulas  
+\begin{eqnarray*}
+d\bm A &=& \omega^0_0 \bm A + \omega^1_0 \bm A_1 + \omega^2_0 \bm A_2\, , 
+\\
+d\bm A_1 &=& \omega^0_1 \bm A + \omega^1_1 \bm A_1 + \omega^2_1 \bm A_2 + \omega^3_1 \bm A_3\, , 
+\\
+d\bm A_2 &=& \omega^0_2 \bm A + \omega^1_2 \bm A_1 + \omega^2_2 \bm A_2 + \omega^3_2 \bm A_3\, , 
+\\
+d\bm A_3 &=& \omega^0_3 \bm A + \omega^1_3 \bm A_1 + \omega^2_3 \bm A_2 + \omega^3_3 \bm A_3\, ,
+\end{eqnarray*}
+where the $\omega^j_i$ are linear forms with respect to the differentials $du, dv$ of the two parameters which define the different points of the surface.
+
+Suppose that $\bm A$ traces a curve $C$ on $S$; $u$ and $v$ are then functions of the same parameter $t$, and, along the curve, we have
+\begin{eqnarray*}
+p^j_i \ dt
+\end{eqnarray*}
+where the quantities $p^j_i$ are functions of $t$.
+
+Let us try to define analytically the trajectories (defined geometrically in paragraph 1) of the various points on the tangent plane to $S$ at $A$.
+
+Every point $\bm M$ of the tangent plane has an expression of the form
+\begin{eqnarray*}
+\bm M &=& \bm A + x \bm A_1 + y \bm A_2;
+\end{eqnarray*}
+$\bm M$ will trace out a trajectory if the tangent to the locus of $\bm M$ passes through $\bm A_3$,
+that is, if
+\begin{eqnarray*}
+\frac{d \bm M}{dt} &=& \lambda \bm M + \mu \bm A_3 .
+\end{eqnarray*}
+If we take into account the expression for $\bm M$, we see that the above condition is linear in $\bm A, \bm A _1, \bm A_2 , \bm A_3$; it breaks down into four equations, between which it will suffice to eliminate $\lambda$ and $\mu$ to have the differential equations of the trajectories we seek. To remove $\mu$, let us neglect the term in $A_3$: we are left with
+\begin{eqnarray*}
+\lefteqn{
+(p^0_0 + x p^0_1 + y p^0_2 ) \bm A + \left( \frac{d x}{dt} + p^1_0 + x p^1_1 + y p^1_2 \right) \bm A_1
+ }\\ && \hspace*{2cm}
+ + \left( \frac{d y}{dt} + p^2_0 + x p^2_1 + y p^2_2 \right) \bm A_2
+ = \lambda( \bm A + x \bm A_1 + y \bm A_2 ) ,
+\end{eqnarray*}
+Elimiantion of $\lambda$ gives the two equations
+\begin{eqnarray}
+\left.
+\begin{array}{lll}
+\displaystyle \frac{dx}{dt} + p^1_0 +x p^1_1 + y p^1_2 - x^2 p^0_1 -  xy p^0_2 & =  & 0,   
+\\ && \\
+\displaystyle \frac{dy}{dt} + p^2_0 +x p^2_1 + y p^2_2 - xy p^0_1 -  y^2 p^0_2 & =  & 0, 
+\end{array}
+\right\}
+\label{eq:1-1}
+\end{eqnarray}
+where we have, as always, replaced $p^j_i - p^0_0$ by $p^j_i$. Equations (\ref{eq:1-1}) are identical to those which express, in plane geometry,  than the point with moving coordinates $x, y$ [with respect to the frame $(\bm A \bm A_1, \bm A_2)$] is fixed. This result could have been anticipated. Let, in fact, $\bm A$ and $\bm A'$ be two infinitely close points on $C$, $R$ and $R'$ the corresponding frames, $\bm M$ and $\bm M'$ the points where the same trajectory cuts the tangent planes at $\bm  A$ and $\bm A'$. The set of all trajectories establishes a projective correspondence between the two tangent planes; denote by $\overline R$ the frame homologous to $R'$ in this correspondence; the coordinates of $\bm M'$ with respect to $R'$ are those of $\bm M$ with respect to $R$. $\bm M$ remains fixed when we pass from $R$ to $\overline R$, whence the existence of the formulas of the type (\ref{eq:1-1}). The identity of these formulas with the formulas (\ref{eq:1-1}) follows from the fact that, as is easy to show, the components $p^j_i\, dt\ (i,j=0,1,2)$ of the infinitesimal displacement taking $R$ to $\overline R$, are equal to the corresponding components of the displacement taking $R$ to $R'$. 
+
+The infinitesimal projective correspondences which made to correspond, step by step, the planes tangent to $S$ along $C$, give finally a finite projective correspondence between the plane tangent at any point $\bm A$ of $C$ and the plane tangent at a fixed point $\bm A_0$. By this correspondence, the frame $[\bm A \bm A_1 \bm A_2]$ attached to the point $\bm A$ [in the plane tangent to $\bm A$] is transformed into a certain reference $[\bm B \bm B_1 \bm B_2]$, attached to the plane involute $\Gamma$ of $C$, situated in the tangent plane at $A_0$, and the quantities $p^j_i\, dt\ (i,j=0,1,2)$ for passing from a frame $[\bm A \bm A_1 \bm A_2]$ to the infinitely close frame on $C$, are equal to the corresponding quantities on $\Gamma$.
+
+$\Gamma$ is projectively defined by the components $p^j_i\, dt$  of the infinitesimal displacement of the frame $[\bm B \bm B_1 \bm B_2]$ associated with each of its points $B$. It is sufficient to study the properties of $\Gamma$ to have those of $C$.
+
+Since the study of the properties of $\Gamma$  depend, as we know (Part I, Chapter II), on the system
+\begin{eqnarray}
+\left.
+\begin{array}{lll}
+\displaystyle \frac{d\bm B}{dt} &=& p^1_0 \bm B_1 + p^2_0 \bm B_2\, ,
+\\ && \\
+\displaystyle \frac{d\bm B_1}{dt} &=& p^0_1 \bm B + p^1_1 \bm B_1 + p^2_1 \bm B_2 \hspace*{1cm} (p^0_0 = 0),\hspace*{1cm}
+\\ && \\
+\displaystyle \frac{d\bm B_2}{dt} &=& p^0_2 \bm B + p^1_2 \bm B_1 + p^2_2 \bm B_2\, 
+\end{array}
+\right\}
+\label{eq:1-2}
+\end{eqnarray}
+we are led to this important remark:
+
+In the study of the properties of the surface $S$, considered as projectively connected space of dimension two, {\em only those quantities $\omega^j_i$ of the matrix of components of the infinitesimal displacement of the moving frame are involved that are situated in the first three lines and the first three columns.}
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

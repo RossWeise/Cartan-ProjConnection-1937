@@ -1,0 +1,247 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 28 Aug 2017
+%\ \\
+
+{\bf 21. Tensor operations. --- }
+% 
+Consider two tensors of the same nature (for example two contravariant analytic vectors) which ahve the same number of components, $(X^\alpha), (Y^\alpha)$. The sum of components on the same line of the two vectors $(X^\alpha + Y^\alpha)$ are clearly the components of a new tensor (contravariant analytic vector in the example indicated); this tensor is the {\em sum of the two tensors considered}. The definition of the sum extends to multiple tensors of the same nature, that admit the same number of components.
+\ \\[.2cm]
+
+{\em Multiplication. --- } 
+The definition of the multiplication applies to two (or more) tensors of any nature.
+
+Consider any two tensors, with components respectively
+\begin{eqnarray*}
+a_1, a_2, ..., a_r, \\
+b_1, b_2, ..., b_s. 
+\end{eqnarray*}
+
+Consider the $rs$ quantities $a_ib_j$; a change of coordinates that preserves the origin transforms $a_i$ and $b_j$ respectively into
+\begin{eqnarray*}
+\overline a_i &=& \lambda^k_i a_k,  \\
+\overline b_j &=& \mu^h_j b_h,  
+\end{eqnarray*}
+and thus $a_i b_j$ into 
+\begin{eqnarray*}
+\overline a_i \overline b_j  &=& \lambda^k_i \mu^h_j a_k b_h.  
+\end{eqnarray*}
+
+The quantities $a_i b_j$ define, as we see, a tensor with $(rs)$ components; this tensor is {\em the product} of the two first ones. 
+\ \\{.2cm}
+
+{\em Contraction of indices. --- }
+Consider two vectors, one contravariant, the other covariant, $X^i$ and $Y_j$, referred to the same frame. The product of these two tensors is the tensor $X^iY_j$. It is easy to see that from this last tensor we can deduce a {\em scalar tensor} with components $X^iY_i$ ($i$ being a summation index).
+
+We have in fact, for an infinitesimal displacement of the frame around the origin (see \S 19 and 20),
+\begin{eqnarray*}
+\delta(X^i Y_i) = Y_i\, \delta X^i + X^i\, \delta Y_i = - e^i_k X^k Y_i + e^k_i Y_k X^i = 0.
+\end{eqnarray*}
+The quantity $X^i Y_i$ has a fixed numerical value, independent of the system of coordinates, and indeed defines a scalar tensor (scalar product of the two vectors considered).
+
+When we pass from the initial product $X^iY_j$ to the associated scalar, we say that we have {\em contracted the indices}.
+
+The product of two analytic vectors, one contravariant $(X^\alpha)$, the other covariant $(Y_\beta)$, leads similarly to the contracted tensor $(X^\alpha Y_\alpha)$.
+
+Consider now the product $X_\alpha Y^i$ of an analytic covariant vector and a contravariant vector; it does not yield a contracted tensor; we have in fact
+\begin{eqnarray*}
+\delta(X^i Y_i) = Y_i\, \delta X^i + X^i\, \delta Y_i = Y^i ( e^0_i X_0 + e^k_i X_k ) - e^i_k Y^k X_i = e^0_i X_0 Y^i ,
+\end{eqnarray*}
+and this last quantity is not zero. 
+
+For the tensor $X_i Y^\alpha$, on the contrary, the contraction of indices is possible. The only components of $Y^\alpha$ that are involved in the composition of the sum $X_i Y^i$ are in effect the $Y^j$, and we saw above that the product $X_iY^j$ yields a contracted tensor. 
+
+In summary, the contraction of indices for the product of two elementary tensors formed by two vectors, one contravariant, the other covariant, is possible if the two vectors are or are not simultaneously analytic (if the indices are all both Greek or both all Latin); in the contrary case, the contraction is possible or not according as the subscript index is a Latin index or a Greek index.
+
+Starting from the elementary tensors, and having regard to the rules of multiplication and of contraction of indices, we can obtain as many new tensors as we want. 
+
+Thus, multiplication of
+\begin{eqnarray*}
+X_i, \ \ \ Y_\alpha, \ \ \ Z^\beta, \ \ \ T^\gamma, \ \ \ U^k, \ \ \ V_\ell, 
+\end{eqnarray*}
+gives a new tensor with 
+ $$ n(n+1)(n+1)(n+1)n.n $$
+components, which we will represent by the symbol
+$$  a^{\centerdot \, \centerdot \, \beta \gamma k \centerdot }_{i \alpha\, \centerdot \, \centerdot \, \centerdot \, \ell}\, , $$
+where the dots indicate that a superscript index and a subscript  index are not stacked.
+
+A tensor of the above form being assumed known, we will obtain new tensors from it by the following operations:
+\begin{itemize}
+\item replacement of a Greek superscript index by a Latin index;
+\item replacement of a Greek subscript index by zero;
+\item 
+contraction of two indices, one superscript, the other subscript, both Greek or both Latin;
+\item 
+contraction of a Latin subscript index with a Greek superscript index.
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

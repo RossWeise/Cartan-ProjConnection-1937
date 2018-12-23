@@ -1,0 +1,231 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 26 Aug 2017
+\ \\
+
+{\bf 7. Equivalent spaces with projective connection. --- }
+% 
+Consider two spaces with projective connection defined, the first by the $n (n + 2)$ forms $\omega^\beta_\alpha$, the second by the $n (n +2)$ forms $\overline \omega^\beta_\alpha$, with the two systems of forms depending on the same variables $u^1, u^2, ..., u^n$. 
+
+We will say that the two spaces are {\em equivalent} (or {\em applicable}) if the geometric properties which can be given to the curves of the first (by the method indicated in the preceding paragraph) are identical to the properties we can ascribe to corresponding curves in the second.
+
+We ask the following question: {\em How can we modify the given $\omega^\beta_\alpha$ corresponding to a certain space with projective connection without modifying the properties of the various  curves of this space?} The space defined by the new forms $\overline \omega^\beta_\alpha$ will thus be equivalent to the first.
+
+The first problem to solve in order to answer the above question is the following: how do we transform the quantities $\omega^\beta_\alpha$ of a displacement of the frame along a curve $C$, when we pass from one projective connection to an equivalent  projective connection?
+
+We shall also be led to establish that the changes found for a particular curve are valid for {\em all the curves of space}, so that the problem initially posed will be found solved in all generality.
+
+In ordinary projective space, consider a curve $\gamma$, image of a curve $C$ of the projectively connected space. The changes of the frames (the substitutions on the forms $\omega^\beta_\alpha$) that retain the properties of $C$ have as images in the projective space the different displacements that preserve the origin. It thus comes down to determining these last displacements.
+
+The different points $\bm A$ of $\Gamma$ are the origins of a family of one parameter $(t)$ of frames defined by the values ??of the quantities $\omega^\beta_\alpha$ along the curve; let us substitute for the frame $[\bm A \bm A_1 \bm A_2 ... \bm A_n]$ a frame with the same origin $[\overline{\bm A} \overline{\bm A}_1 \overline{\bm A}_2 ... \overline{\bm A}_n]$. The new frame will be defined by equations of the form
+\begin{eqnarray}
+\left.
+\begin{array}{lll}
+\overline{\bm A}  & =  & \bm A  \\
+\overline{\bm A}_1  & =  & a^0_1\bm A + a^1_1 \bm A_1 + \cdots + a^n_1 \bm A_n \\
+ \cdots &   & \cdots  \\
+\overline{\bm A}_n  & =  & a^0_n\bm A + a^1_n \bm A_1 + \cdots + a^n_n \bm A_n   , 
+\end{array}
+\right\}
+\label{eq:1-6}
+\end{eqnarray}
+where the $a^j_i$ are {\em arbitrary} functions of $t$.
+
+It is a matter of calculating the $\overline \omega^\beta_\alpha$ ??relative to the new frame, knowing the $\omega^\beta_\alpha$ and the $a^j_i$. The result of the calculation is capable of being into a very simple condensed form, by introducting certain matrices, and by regarding the theory of operations (especially multiplication) of the latter.
+
+Put
+\begin{eqnarray*}
+(\bm A) = \left(
+\begin{array}{c}
+\bm A \\  \bm A_1 \\\bm A_2 \\ \vdots \\ \bm A_n 
+\end{array}
+\right), \hspace*{1.5cm}
+(\, \overline{\bm A}\,) = \left(
+\begin{array}{c}
+\overline{\bm A} \\  \overline{\bm A}_1 \\ \overline{\bm A}_2 \\ \vdots \\ \overline{\bm A}_n 
+\end{array}
+\right), 
+\\
+(\, a\,) = \left(
+\begin{array}{cccc}
+1 &  0  & \cdots & 0 \\
+a^0_1 &  a^1_1  & \cdots & a^n_1 \\
+\vdots &    &  & \vdots \\
+a^0_n &  a^1_n  & \cdots & a^n_n 
+\end{array}
+\right);  \hspace*{1.3cm}
+\end{eqnarray*}
+the first two matrices have only one column and $n+1$ rows; the last has $n+1$ rows and $n+1$ columns; multiplication by the first two is thus possible. 
+
+From equations (\ref{eq:1-6}) we deduce immediately
+\begin{eqnarray*}
+(\, \overline{\bm A}\, ) &=& (a) (\bm A) .
+\end{eqnarray*}
+If we denote by $p^j_i\, dt$ the value of $\omega^j_i$ along $C$, and if we represent by $\left( \frac{d\bm A}{dt} \right)$ the matrix whose elements are the derivatives of the elements of $(\bm A)$ with respect to $t$, we have in this way
+\begin{eqnarray*}
+\left( \frac{d\bm A}{dt} \right) &=& 
+\left(
+\begin{array}{ccccc}
+0 &  p^1  & p^2 & \cdots & p^n \\
+p^0_1 &  p^1_1  & p^2_1  & \cdots & p^n_1 \\
+\vdots &    &  & & \vdots \\
+p^0_n &  p^1_n  & p^2_n  & \cdots & p^n_n 
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\bm A \\  \bm A_1 \\\bm A_2 \\ \vdots \\ \bm A_n 
+\end{array}
+\right),
+\end{eqnarray*}
+or, denoting by $(p)$ the first matrix on the right hand side,
+\begin{eqnarray*}
+\left( \frac{d\bm A}{dt} \right) &=& (p) (\bm A) .
+\end{eqnarray*}
+
+Substitute for the frame $(\bm A)$ the frame $(\, \overline{\bm A}\, ) = (a) (\bm A)$, and calculate $\left( \frac{d\overline{\bm A}}{dt} \right)$. We have
+\begin{eqnarray*}
+\left( \frac{d\overline{\bm A}}{dt} \right) &=& \left(\frac{da}{dt} \right)) (\bm A) + (a) \left(\frac{d\bm A}{dt} \right) 
+= \left(\frac{da}{dt} \right)) (\bm A) + (a) (p) \left(\bm A \right) .
+\end{eqnarray*}
+
+If we denote by $\left(a^{-1} \right)$ the matrix deduced from the array of the substitution inverse to (\ref{eq:1-6}), the matrix whose product by $(a)$ is the identity matrix
+\begin{eqnarray*}
+\left(
+\begin{array}{cccc}
+1 &  0   & \cdots & 0 \\
+0 &  1    & \cdots & 0 \\
+\vdots &    &  & \vdots \\
+0 &  0    & \cdots & 1 
+\end{array}
+\right),
+\end{eqnarray*}
+and which we shall call the {\em inverse} of $(a)$, we have
+\begin{eqnarray*}
+(\bm A) &=& (a^{-1}) (\, \overline{\bm A}\, ) ,
+\end{eqnarray*}
+and the expression for $\left( \frac{d\overline{\bm A}}{dt} \right)$ can be written
+\begin{eqnarray*}
+\left( \frac{d\overline{\bm A}}{dt} \right) &=& 
+\left( \left(\frac{da}{dt} \right)  + (a) (p) \right) (a^{-1}) \left(\, \overline{\bm A}\, \right) .
+\end{eqnarray*}
+We see that the matrix which replaces $(p)$, when we replace the basis $(\bm A)$ by the basis $(\, \overline{\bm A} \, )$, is
+\begin{eqnarray*}
+\left( \overline{p} \right) &=& 
+\left( \left(\frac{da}{dt} \right)  + (a) (p) \right) (a^{-1})  .
+\end{eqnarray*}
+To obtain a result that applies to an arbitrary curve, it is sufficient to multiply the two sides of the above relation by $dt$; we thus obtain, by reintroducing the $\omega^j_i$ in place of the $p^j_i\, dt$, in such a way that nothing recalls the original curve $C$ considered.
+\begin{eqnarray}
+(\, \overline \omega \,) &=& \left( (da) +(a) (\omega) \right) (a^{-1}) .
+\label{eq:1-7}
+\end{eqnarray}
+
+Definitively:
+
+{\em The changes that can be made to the forms $\omega^\beta_\alpha$, without modifying the properties of the curves of the space with projective connection defined by these forms, are those which we obtain by substituting for the matrix $(\omega)$ the matrix $(\, \overline \omega \,)$ defined by Equation (\ref{eq:1-7}), where the elements of $(a)$ (other than those of the first line) are chosen in a completely arbitrary way.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

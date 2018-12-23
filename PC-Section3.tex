@@ -1,0 +1,134 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 24 Aug 2017
+\ \\
+
+{\bf 3. Arc, curvature, geodesics. --- }
+% 
+Since the functions $p$ of $t$ appearing in formulas (\ref{eq:1-2}) are assumed known, we can deduce the differential equation of third order satisfied by $\bm B$; it is sufficient to put this equation into the form
+\begin{eqnarray*}
+\frac{d^3 \bm B}{dt^3}  + p_1 \frac{d^2 \bm B}{dt^2} + p_2 \frac{d \bm B}{dt} + p_3 \bm B &=& 0 
+\end{eqnarray*}
+by the method indicated in Chapter II of the first Part, to obtain the expressions for the arc and the projective curvature of $\Gamma$, that is, of $C$. 
+
+Let us look for the curves $C$ of the surface $S$ which develop into lines: we will call these the {\em geodesics} of $S$. 
+
+The point $\bm B$ will describe a line if $d^2\bm B$ is a linear combination of $d\bm B$ and $\bm B$. The geodesics of $S$ are thus the curves along which the quantities $\omega^j_i$ vary in such a way that 
+\begin{eqnarray*}
+d^2\bm B &=& \lambda d\bm B + \mu\bm B .
+\end{eqnarray*}
+By assuming that $\omega^0_0$, which is allowed since $\bm B$ displaces on a curve, and by suppressing zero subscript indices, we have
+\begin{eqnarray*}
+d\bm B &=& \omega^1 \bm B_1 + \omega^2 \bm B_2\, ,
+\\ 
+d\bm B_1 &=& \omega^0_1 \bm B + \omega^1_1 \bm B_1 + \omega^2_1 \bm B_2 \, ,  
+\\
+d\bm B_2 &=& \omega^0_2 \bm B + \omega^1_2 \bm B_1 + \omega^2_2 \bm B_2\, ,
+\end{eqnarray*}
+and the defining relation for geodesics becomes
+\begin{eqnarray*}
+d \left( \omega^1 \bm B_1 + \omega^2 \bm B_2 \right) 
+&=& \lambda \left( \omega^1 \bm B_1 + \omega^2 \bm B_2 \right)  + \mu\bm B .
+\end{eqnarray*}
+This equation represents three, between which we must eliminate $\lambda$ and $\mu$. The elimination of $\mu$ is done by neglecting the terms in $\bm B$; we find then
+\begin{eqnarray*}
+\left( d\omega^1 + \omega^1 \omega^1_1 + \omega^2 \omega^1_2 \right) \bm B_1 
++ \left( d\omega^2 + \omega^1 \omega^2_1 + \omega^2 \omega^2_2 \right) \bm B_2
+&=& \lambda \left( \omega^1 \bm B_1 + \omega^2 \bm B_2 \right) .
+\end{eqnarray*}
+On equating the coefficients of $\bm B_1$ and $\bm B_2$ on the two sides, and on eliminating $\lambda$ from the two equations obtained, we obtain the following differential equation for geodesics:
+\begin{eqnarray}
+\frac{d\omega^1 + \omega^1 \omega^1_1 + \omega^2 \omega^1_2 }{\omega^1} 
+&=& \frac{d\omega^2 + \omega^1 \omega^2_1 + \omega^2 \omega^2_2 }{\omega^2} \, .
+\label{eq:1-3}
+\end{eqnarray}
+
+In (\ref{eq:1-3}), the $\omega^j_1$ are linear forms in the differentials  $du$ and $dv$ of the two variables $u$ and $v$ that determine the different points of $S$. If we take $u$ as the independent variable [$v=f(u)$], we establish that the differential equation defining the geodesics of $S$ takes the form 
+\begin{eqnarray*}
+v'' + A(u,v) v'^3 + B(u,v) v'^2 + C(u,v) v' + D(u,v) &=& 0.
+\end{eqnarray*}
+
+We can give the geodesics of $S$ the following geometric definition: they are the curves such that their osculating plane at any point $\bm A$ passes through the point $\bm A_3$ associated with $\bm A$ in the definition of the projective connection. This property is geometrically evident; we have furthermore
+\begin{eqnarray*}
+\lefteqn{
+\left| \bm A_3\ \bm A\ d\bm A\ \bm d^2A \right|
+ } \\ &=& 
+  \left| \bm A_3\, , \bm A\, , \omega^1 \bm A_1 + \omega^2 \bm A_2 \, , \left(d\omega^1 + \omega^1 \omega^1_1 + \omega^2 \omega^1_2 \right) \bm A_1 + \left( d\omega^2 + \omega^1 \omega^2_1 + \omega^2 \omega^2_2 \right) \bm A_2
+ \right|\, ,
+\end{eqnarray*}
+and this last determinant is zero according to equation (\ref{eq:1-3}).
+
+If we take $\bm A_3$ at infinity on the (ordinary) normal at $\bm A$, we recover the geodesic of ordinary geometry. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

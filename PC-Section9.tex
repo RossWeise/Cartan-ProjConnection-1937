@@ -1,0 +1,239 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 26 Aug 2017
+\ \\
+
+{\bf 9. The natural frame. --- }
+% 
+Consider any space with projective connection, defined by the  coordinates $(u^1, u^2, ..., u^n)$ of its various points and by the matrix $(\omega)$. We have seen that there exists an infinity of possible transformations for $(\omega)$, that preserve the properties of the various curves in the space. It is therefore natural to take advantage of this indeterminacy to make the matrix ($\omega$) as simple as possible.
+
+First of all, let us turn our attention to the $\omega^i$. By one of these changes of frame previously defined, these quantities undergo linear transformations with arbitrary coefficients
+\begin{eqnarray*}
+\overline \omega^i &=& b^i_k \omega^k ;
+\end{eqnarray*}
+we can thus arrange it in such a way that $\omega^1, \omega^2, ...\omega^n$ take respectively the values $du^1, du^2, ..., du^n$:
+\begin{eqnarray*}
+ \omega^i &=& du^i\, ;
+\end{eqnarray*}
+the frames realising this condition will be said to be {\em semi-natural}.
+
+The number of forms on which depend the frames attached to the surface is thus reduced to $n (n + 2) - n = n^2 + n$.
+
+Consider the changes of frame that preserve the above form
+of the $\omega^i$. For these changes, we will have
+\begin{eqnarray*}
+\overline \omega^i &=& \omega^i ,
+\end{eqnarray*}
+from which it follows that 
+\begin{eqnarray*}
+b^i_i = 1, \ \ \ \ b^j_i = 0\ \ (i\neq j).
+\end{eqnarray*}
+The matrix of the $b$ will thus have the form
+\begin{eqnarray*}
+(\, a^{-1} \,) = \left(
+\begin{array}{ccccc}
+1 & 0  & 0 & \cdots & 0 \\
+b^0_1 &  1 & 0 & \cdots & 0 \\
+b^0_2 &  0 & 1 & \cdots & 0 \\
+\vdots &  &  &  & \vdots \\
+b^0_n &  0  &  0  & \cdots & 1 
+\end{array}
+\right), 
+\end{eqnarray*}
+and the relations linking the elements of the two matrices $(a)$ and $(a^{-1})$ show that $(a)$ has the same form:
+\begin{eqnarray*}
+( a) = \left(
+\begin{array}{ccccc}
+1 & 0  & 0 & \cdots & 0 \\
+a^0_1 &  1 & 0 & \cdots & 0 \\
+a^0_2 &  0 & 1 & \cdots & 0 \\
+\vdots &  &  &  & \vdots \\
+a^0_n &  0  &  0  & \cdots & 1 
+\end{array}
+\right); 
+\end{eqnarray*}
+we establish immediately that 
+\begin{eqnarray*}
+(\, a^{-1} \,) = \left(
+\begin{array}{ccccc}
+1 & 0  & 0 & \cdots & 0 \\
+- a^0_1 &  1 & 0 & \cdots & 0 \\
+- a^0_2 &  0 & 1 & \cdots & 0 \\
+\vdots &  &  &  & \vdots \\
+- a^0_n &  0  &  0  & \cdots & 1 
+\end{array}
+\right). 
+\end{eqnarray*}
+
+Consider now the forms $\overline \omega^i_i$ obtained by taking into account the above specialisations. According to the general expression for the $\overline \omega^j_i$ given in paragraph 8, we have 
+\begin{eqnarray*}
+\overline \omega^1_1 &=& a^0_1\, du^1 + \omega^1_1 + a^0_k\, du^k
+\\
+\overline \omega^2_2 &=& a^0_2\, du^2 + \omega^2_2 + a^0_k\, du^k
+\\
+\vdots\ \   &=& \hspace*{1.6cm} \vdots
+\\
+\overline \omega^n_n &=& a^0_n\, du^n + \omega^n_n + a^0_k\, du^k.
+\end{eqnarray*}
+By adding these relations we obtain ($i$ being here a summation index)
+\begin{eqnarray*}
+\overline \omega^i_i &=&  \omega^i_i + (n+1) a^0_k\,, du^k\, :
+\end{eqnarray*}
+$\omega^i_i$ reproduces itself augmented by the linear form $(n+1) a^0_k\, du^k$; since this form is arbitrary, by the arbitrary character f the $a^0_k$, we can annihilate them. This operation reduces by one the number of arbitrary forms $\omega^\beta_\alpha$, which reduce finally to 
+$$  n^2 + n -1. $$
+After this new specialisation of the forms $\omega^\beta_\alpha$, on which depends the infinitesimal displacement of the frame, we will have 
+\begin{eqnarray*}
+(n+1) a^0_k\,, du^k &=& 0,
+\end{eqnarray*}
+from which 
+\begin{eqnarray*}
+a^0_k &=& 0,
+\end{eqnarray*}
+and the matric of the $a$ is reduced to the identity matrix
+\begin{eqnarray*}
+(a) &=& I .
+\end{eqnarray*}
+
+The most general projective connection that can be established on an $n$-dimensional continuum $(u^1, u^2, ..., u^n)$ depends, as we see, on being given $n^2+n-1$ arbitrary forms. Since each of these forms involves $n$ arbitrary functions of the coordinates $u^i$ (the coefficients of the differentials of the coordinates $u^i$), we can say that the most general projective connection that we can attribute to a
+given continuum of $n$ dimensions depends on $n(n^2+n-1)$  arbitrary functions of coordinates.
+
+The elements of the matrix associated with each connection are defined by formulas of the type
+\begin{eqnarray}
+\left.
+\begin{array}{rcl}
+ \omega^j_i & =  &  \Pi^j_{ik}\, du^k, \\
+  &   &  \hspace*{2cm} (\Pi^{ik}_j = 0 ). \\
+ \omega^0_i & =  &  \Pi^0_{ik}\, du^k,
+\end{array}
+\right\}
+\label{eq:1-8}
+\end{eqnarray}
+Once the connection is chosen (the functions $\Pi$ have been fixed),  the motion of the frame attached to any point of the space is determined; the frame that formulas (8) attach abstractly to each  point of the space with projective connection considered is that which  we shall call the {\em natural frame} for that point.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

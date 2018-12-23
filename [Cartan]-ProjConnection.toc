@@ -1,0 +1,25 @@
+\contentsline {chapter}{\numberline {1}The Concept of a Space with Projective Connection}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Geometric introduction of the concept of a space with projective connection. Two dimensional manifolds.}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}General spaces with projective connection.}{6}{section.1.2}
+\contentsline {chapter}{\numberline {2}Differentiation of Spaces with Projective Connection and of Ordinary Projective Space. Cycles and Associated Displacements.}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction to the concept of a cycle}{17}{section.2.1}
+\contentsline {section}{\numberline {2.2}Study of a space with projective connection in the neighbourhood of one of its points}{17}{section.2.2}
+\contentsline {chapter}{\numberline {3}Curvature and Torsion of a Space with Projective Connection}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Concepts of the tensor calculus in projective geometry}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tensor algebra}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tensor analysis}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Curvature and torsion tensors and internal properties of the space}{27}{section.3.4}
+\contentsline {chapter}{\numberline {4}The Bianchi Identities}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Differential forms of second degree and the exterior calculus}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}The Bianchi identities}{28}{section.4.2}
+\contentsline {chapter}{\numberline {5}Differential Equations of Second Order Related to the Theory of Spaces with Projective Connection}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Geometrisation of differential equations of the type $$\frac {d^2 v}{du^2} = A \left ( \frac {d v}{du} \right )^3 + 3 B \left ( \frac {d v}{du} \right )^2 + 3 C \frac {d v}{du} + D, $$ where $A,B,C,D$ are functions of $u$ and $v$}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}Plane geodesic representation of surfaces}{29}{section.5.2}
+\contentsline {section}{\numberline {5.3}Geodesics of space with projective connection of dimension $n$}{29}{section.5.3}
+\contentsline {chapter}{\numberline {6}Differential Geometry of Surfaces Embedded in Spaces with Projective Connection of Dimension 3}{30}{chapter.6}
+\contentsline {section}{\numberline {6.1}Study of elements of second order}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Study of elements of third order}{30}{section.6.2}
+\contentsline {chapter}{\numberline {7}Holonomy Group of a Space with Projective Connection}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}Definition and properties of an holonomy group}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}Spaces with projective connection admitting a given holonomy group}{31}{section.7.2}
+\contentsline {section}{\numberline {7.3}Normal spaces with projective connection}{31}{section.7.3}

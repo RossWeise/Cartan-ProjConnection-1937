@@ -1,0 +1,236 @@
+% !TEX root = [Cartan]-ProjConnection.tex
+
+%  Section completed 26 Aug 2017
+\ \\
+
+{\bf 8. Effective determination of the elements of the transformed matrix. --- }
+% 
+The elements of the matrices $(a)$, $(da)$ and $\omega)$, appearing on the right hand side of relation (\ref{eq:1-7}), are known as soon as the matrix $(a)$ is chosen. To calculate the elements of $(\overline \omega)$, it is enough to know $(a^{-1})$.
+
+Put
+\begin{eqnarray*}
+(\, a^{-1} \,) = \left(
+\begin{array}{cccc}
+b^0_0 &  b^1_0  & \cdots & b^n_0 \\
+b^0_1 &  b^1_1  & \cdots & b^n_1 \\
+\vdots &    &  & \vdots \\
+b^0_n &  b^1_n  & \cdots & b^n_n 
+\end{array}
+\right); 
+\end{eqnarray*}
+we must have
+\begin{eqnarray*}
+\left(
+\begin{array}{cccc}
+1 &  0  & \cdots & 0 \\
+a^0_1 &  a^1_1  & \cdots & a^n_1 \\
+\vdots &    &  & \vdots \\
+a^0_n &  a^1_n  & \cdots & a^n_n 
+\end{array}
+\right)
+ \left(
+\begin{array}{cccc}
+b^0_0 &  b^1_0  & \cdots & b^n_0 \\
+b^0_1 &  b^1_1  & \cdots & b^n_1 \\
+\vdots &    &  & \vdots \\
+b^0_n &  b^1_n  & \cdots & b^n_n 
+\end{array}
+\right)
+&=& 
+\left(
+\begin{array}{cccc}
+1 &  0   & \cdots & 0 \\
+0 &  1    & \cdots & 0 \\
+\vdots &    &  & \vdots \\
+0 &  0    & \cdots & 1 
+\end{array}
+\right);
+\end{eqnarray*}
+this requires ($\lambda$ being a summation index)
+\begin{eqnarray*}
+a^\lambda_\alpha b^\beta_\lambda &=& 
+\left\{
+\begin{array}{lll}
+1& \hspace*{1cm} & \mbox{if } \alpha = \beta , \\ 
+0& \hspace*{1cm} & \mbox{if } \alpha \neq \beta .
+\end{array}
+\right.
+\end{eqnarray*}
+
+We deduce immediately from this that if $|a^\beta_\alpha |$ represents the determinant of the $a^\beta_\alpha$, the general element of the matrix $(a^{-1})$ is 
+\begin{eqnarray*}
+b^\beta_\alpha &=& \frac{\mbox{the minor with respect to the element } a^\beta_\alpha}{|a^\beta_\alpha |}\, .
+\end{eqnarray*}
+In particular, we have
+\begin{eqnarray*}
+b^0_0 = 1, \ \ \ \ b^i_0 = 0 \ \ (i\neq 0),
+\end{eqnarray*}
+so that $(a^{-1})$ has the same form as $(a)$:
+\begin{eqnarray*}
+(\, a^{-1} \,) = \left(
+\begin{array}{cccc}
+1 &  0  & \cdots & 0 \\
+b^0_1 &  b^1_1  & \cdots & b^n_1 \\
+\vdots &    &  & \vdots \\
+b^0_n &  b^1_n  & \cdots & b^n_n 
+\end{array}
+\right); 
+\end{eqnarray*}
+
+We are now in a position to calculate the elements $\overline \omega^j_i$ of the matrix $(\, \overline \omega\, )$ the transform of $(\omega)$.
+
+Note first that the fact that we assumed $\omega^0_0 = 0$ in $(\omega)$ does not lead to the nullity of the corresponding element $\overline \omega^0_0$ in $(\, \overline \omega\, )$. We have according to (\ref{eq:1-7})
+\begin{eqnarray*}
+\overline \omega^0_0 &=& da^\lambda_0 \, b^0_\lambda + a^\lambda_0 \omega^\mu_\lambda b^0_\mu ,
+\end{eqnarray*}
+where $\lambda$ and $\mu$ are summation indices. The first term on the right hand side is zero according to the form of $(a)$; the second reduces to $\omega^\mu_0 b^0_\mu \ (\mu = 0,1,2,...,n)$. The term in the sum $\omega^\mu_0 b^0_\mu$ with $\mu=0$ being zero, we will write by representing, here and in what follows, by Latin letters the indices that take values $1,2,...,n$ (excluding 0), 
+\begin{eqnarray*}
+\overline \omega^0_0 &=&   \omega^k_0 b^0_k .
+\end{eqnarray*}
+
+This is the new value of $\omega^0_0$; it is not zero in general, but we can set it to zero by subtracting $\omega^k_0 b^0_k$ from each of the terms on the principal diagonal of the matrix $(\, \overline \omega\, )$, which is equivalent to subtracting from this matrix the matrix
+\begin{eqnarray*}
+\omega^k_0 b^0_k (I),
+\end{eqnarray*}
+where $(I)$ represents the unit matrix.
+
+We shall assume in what follows that $\overline \omega^0_0=0$.
+
+The transforms of the other terms of the matrix $(\omega)$ are obtained similarly. We have, always according to (\ref{eq:1-7}),
+\begin{eqnarray*}
+\overline \omega^i_0 &=& da^\lambda_0 \, b^i_\lambda + a^\lambda_0 \omega^\mu_\lambda b^i_\mu ,
+\end{eqnarray*}
+so that, on introducing Latin indices and suppressing zero lower indices, 
+\begin{eqnarray*}
+\overline \omega^i_0 &=& b^i_k \omega^k .
+\end{eqnarray*}
+We find similarly, for $i,j \neq 0$,
+\begin{eqnarray*}
+\overline \omega^j_i &=& da^\lambda_i \, b^j_\lambda + a^\lambda_i \omega^\mu_\lambda b^j_\mu - b^0_k \omega^k \delta^j_i\, ,
+\end{eqnarray*}
+where $\delta^j_i$ has its usual meaning, which, according to the notational conventions made, can also be written
+\begin{eqnarray*}
+\overline \omega^j_i &=& da^k_i \, b^j_k + a^0_i \omega^k b^j_k + a^h_i \omega^k_h b^j_k - b^0_k \omega^k \delta^j_i\, .
+\end{eqnarray*}
+We have finally 
+\begin{eqnarray*}
+\overline \omega^0_i &=& da^0_i  + da^k_i \, b^0_k 
++ a^0_i \omega^k b^0_k 
++ a^k_i \omega^0_k 
++ a^k_i \omega^h_k b^0_h,
+\end{eqnarray*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% section complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
